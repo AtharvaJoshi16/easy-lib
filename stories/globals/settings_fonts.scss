@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'FiraSans-Regular';
+    src: local('FiraSans-Regular'), url('../assets/fonts/FiraSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'FiraSans-Medium';
+    src: local('FiraSans-Medium'), url('../assets/fonts/FiraSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'FiraSans-Light';
+    src: local('FiraSans-Light'), url('../assets/fonts/FiraSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'FiraSans-Bold';
+    src: local('FiraSans-Bold'), url('../assets/fonts/FiraSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'FiraSans-ExtraBold';
+    src: local('FiraSans-ExtraBold'), url('../assets/fonts/FiraSans-ExtraBold.ttf') format('truetype');
+}
+
+:root {
+    --firasans-light: 'FiraSans-Light';
+    --firasans-regular: 'FiraSans-Regular';
+    --firasans-medium: 'FiraSans-Medium';
+    --firasans-bold: 'FiraSans-Bold';
+    --firasans-extra-bold: 'FiraSans-ExtraBold';
+}

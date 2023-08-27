@@ -1,0 +1,54 @@
+@import '../globals/index.scss';
+
+.btn {
+    border: 1px solid transparent;
+    font-family: var(--firasans-medium);
+    font-size: 16px;
+    letter-spacing: 0.1px;
+
+    &:disabled {
+        background: #000000;
+        color: #848484;
+        opacity: 0.3;
+    }
+
+    &--small {
+        font-size: 14px;
+        padding: 2px 12px;
+    }
+
+    &--medium {
+        font-size: 16px;
+        padding: 3px 14px;
+    }
+
+    &--large {
+        font-size: 18px;
+        padding: 4px 16px;
+    }
+
+    &--contained {
+        color: #FFFFFF;
+        border-radius: 4px;
+    }
+
+    &--color-primary {
+        background: #6600FF;
+    }
+
+    &--color-secondary {
+        background: #2196f3;
+    }
+
+    &--color-success {
+        background: #43a047;
+    }
+
+    &--color-error {
+        background: #b12e31;
+    }
+
+    &--color-dark {
+        background: #374242;
+    }
+}
