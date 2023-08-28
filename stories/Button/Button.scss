@@ -5,6 +5,7 @@
     font-family: var(--firasans-medium);
     font-size: 16px;
     letter-spacing: 0.1px;
+    border-radius: 4px;
 
     &:disabled {
         background: #000000;
@@ -29,26 +30,54 @@
 
     &--contained {
         color: #FFFFFF;
-        border-radius: 4px;
+
+        &--primary {
+            background: #6600FF;
+        }
+
+        &--secondary {
+            background: #2385a6;
+        }
+
+        &--success {
+            background: #3c8f40;
+        }
+
+        &--error {
+            background: #9b2729;
+        }
+
+        &--dark {
+            background: #374242;
+        }
     }
 
-    &--color-primary {
-        background: #6600FF;
-    }
+    &--outlined {
+        background-color: transparent;
 
-    &--color-secondary {
-        background: #2385a6;
-    }
+        &--primary {
+            border: 1.5px solid #6600FF;
+            color: #6600FF;
+        }
 
-    &--color-success {
-        background: #3c8f40;
-    }
+        &--secondary {
+            border: 1.5px solid #2385a6;
+            color: #2385a6;
+        }
 
-    &--color-error {
-        background: #9b2729;
-    }
+        &--success {
+            border: 1.5px solid #3c8f40;
+            color: #3c8f40;
+        }
 
-    &--color-dark {
-        background: #374242;
+        &--error {
+            border: 1.5px solid #9b2729;
+            color: #9b2729;
+        }
+
+        &--dark {
+            border: 1.5px solid #374242;
+            color: #374242;
+        }
     }
 }

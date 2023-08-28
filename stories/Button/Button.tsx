@@ -13,11 +13,13 @@ export const Button = ({
     href,
     size = 'medium',
 }: ButtonProps) => {
+    const containedOrOutlined = (variant === 'contained' || variant === 'outlined');
     const classes = classNames(
         'btn',
         `btn--${variant}`,
+        { [`btn--${variant}--${color}`]: containedOrOutlined },
+        { [`btn--${variant}`]: !containedOrOutlined },
         `btn--${size}`,
-        `btn--color-${color}`,
     )
 
     return (
