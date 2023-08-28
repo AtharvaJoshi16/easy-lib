@@ -27,6 +27,7 @@ export const Button = ({
             aria-disabled={disabled}
         >
             {children}
+            {iconPosition === 'right' && <span>{icon}</span>}
         </button>
     );
 }

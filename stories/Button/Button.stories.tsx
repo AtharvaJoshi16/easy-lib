@@ -1,7 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
-
 import { Button } from './Button';
-
+import { ChevronRight } from '../globals/icons';
 const meta: Meta<typeof Button> = {
     component: Button,
     title: 'Button',
@@ -24,7 +23,8 @@ export const ButtonVariants: Story = {
     args: {
         variant: 'contained',
         size: 'medium',
-        color: 'primary'
+        color: 'primary',
+        icon: <ChevronRight />
     }
 }
 
