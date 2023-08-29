@@ -1,5 +1,32 @@
 @import '../globals/index.scss';
 
+@mixin contained-variant($background, $hover-bg, $pressed-bg) {
+    background: $background;
+
+    &:hover {
+        background: $hover-bg;
+    }
+
+    &:active {
+        background: $pressed-bg;
+    }
+}
+
+@mixin outlined-variant($border-size, $border-color, $hover-pressed-border-color, $font-color) {
+    border: $border-size solid $border-color;
+    color: $font-color;
+
+    &:hover {
+        border: $border-size solid $hover-pressed-border-color;
+        color: $hover-pressed-border-color;
+    }
+
+    &:active {
+        border: $border-size solid $hover-pressed-border-color;
+        color: $hover-pressed-border-color;
+    }
+}
+
 .btn {
     border: 1px solid transparent;
     font-family: var(--firasans-medium);
@@ -30,25 +57,26 @@
 
     &--contained {
         color: #FFFFFF;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
         &--primary {
-            background: #6600FF;
+            @include contained-variant(#6600FF, #4500AD, #3D0099);
         }
 
         &--secondary {
-            background: #2385a6;
+            @include contained-variant(#2385a6, #1E728E, #195F76);
         }
 
         &--success {
-            background: #3c8f40;
+            @include contained-variant(#3c8f40, #337A36, #2B682E);
         }
 
         &--error {
-            background: #9b2729;
+            @include contained-variant(#9b2729, #842123, #711C1E);
         }
 
         &--dark {
-            background: #374242;
+            @include contained-variant(#374242, #535D5D, #474F4F);
         }
     }
 
