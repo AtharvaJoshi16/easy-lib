@@ -12,6 +12,7 @@ export const Button = ({
     iconPosition = 'left',
     href,
     size = 'medium',
+    onClick,
 }: ButtonProps) => {
     const containedOrOutlined = (variant === 'contained' || variant === 'outlined');
     const classes = classNames(
@@ -28,6 +29,7 @@ export const Button = ({
             className={classes}
             disabled={disabled}
             aria-disabled={disabled}
+            onClick={(e) => onClick?.(e)}
         >
             <div className="btn__content">
                 {iconPosition === 'left' && <span>{icon}</span>}

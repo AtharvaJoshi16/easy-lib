@@ -16,6 +16,10 @@ const meta: Meta<typeof Button> = {
 export default meta;
 type Story = StoryObj<typeof Button>;
 
+const handleClick = () => {
+    console.info("Clicked...");
+}
+
 const icon = <Icon
     color='red' title='Right'>
     <ChevronRight />
@@ -38,6 +42,7 @@ export const ButtonVariants: Story = {
         size: 'medium',
         color: 'primary',
         icon: icon,
+        onClick: handleClick,
     }
 }
 

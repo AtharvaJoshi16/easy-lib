@@ -7,4 +7,5 @@ export interface ButtonProps {
     iconPosition: "left" | "right";
     href: string;
     size: 'small' | 'medium' | 'large';
+    onClick: (event: React.MouseEvent<HTMLElement>) => void;
 }
