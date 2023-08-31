@@ -1,32 +1,32 @@
 @font-face {
-    font-family: 'FiraSans-Regular';
-    src: local('FiraSans-Regular'), url('../assets/fonts/FiraSans-Regular.ttf') format('truetype');
+    font-family: 'Rubik-Regular';
+    src: local('Rubik-Regular'), url('../assets/fonts/Rubik-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'FiraSans-Medium';
-    src: local('FiraSans-Medium'), url('../assets/fonts/FiraSans-Medium.ttf') format('truetype');
+    font-family: 'Rubik-Medium';
+    src: local('Rubik-Medium'), url('../assets/fonts/Rubik-Medium.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'FiraSans-Light';
-    src: local('FiraSans-Light'), url('../assets/fonts/FiraSans-Light.ttf') format('truetype');
+    font-family: 'Rubik-Light';
+    src: local('Rubik-Light'), url('../assets/fonts/Rubik-Light.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'FiraSans-Bold';
-    src: local('FiraSans-Bold'), url('../assets/fonts/FiraSans-Bold.ttf') format('truetype');
+    font-family: 'Rubik-Bold';
+    src: local('Rubik-Bold'), url('../assets/fonts/Rubik-Bold.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'FiraSans-ExtraBold';
-    src: local('FiraSans-ExtraBold'), url('../assets/fonts/FiraSans-ExtraBold.ttf') format('truetype');
+    font-family: 'Rubik-ExtraBold';
+    src: local('Rubik-ExtraBold'), url('../assets/fonts/Rubik-ExtraBold.ttf') format('truetype');
 }
 
 :root {
-    --firasans-light: 'FiraSans-Light';
-    --firasans-regular: 'FiraSans-Regular';
-    --firasans-medium: 'FiraSans-Medium';
-    --firasans-bold: 'FiraSans-Bold';
-    --firasans-extra-bold: 'FiraSans-ExtraBold';
+    --rubik-light: 'Rubik-Light';
+    --rubik-regular: 'Rubik-Regular';
+    --rubik-medium: 'Rubik-Medium';
+    --rubik-bold: 'Rubik-Bold';
+    --rubik-extra-bold: 'Rubik-ExtraBold';
 }

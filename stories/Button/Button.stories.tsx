@@ -13,10 +13,10 @@ export const ButtonVariants: Story = {
     render: ({ ...args }) => (
         <div style={{ margin: '30px', display: 'flex', gap: '20px' }}>
             <Button {...args}>
-                Primary
+                PRIMARY
             </Button>
             <Button {...args}>
-                Secondary
+                SECONDARY
             </Button>
         </div>
     ),
@@ -24,7 +24,7 @@ export const ButtonVariants: Story = {
         variant: 'contained',
         size: 'medium',
         color: 'primary',
-        icon: <ChevronRight />
+        icon: <ChevronRight />,
     }
 }
 
@@ -32,10 +32,10 @@ export const ButtonDisabled: Story = {
     render: ({ ...args }) => (
         <div style={{ margin: '30px', display: 'flex', gap: '20px' }}>
             <Button {...args}>
-                Primary
+                PRIMARY
             </Button>
             <Button {...args}>
-                Secondary
+                SECONDARY
             </Button>
         </div>
     ),
