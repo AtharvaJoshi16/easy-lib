@@ -1,0 +1,32 @@
+.icon {
+    &--white {
+        path {
+            stroke: #fff;
+        }
+    }
+
+    &--black {
+        path {
+            stroke: #000;
+        }
+    }
+
+    &--red {
+        path {
+            stroke: #961911;
+        }
+    }
+
+    &--green {
+        path {
+            stroke: #3e9658;
+        }
+    }
+
+    &--blue {
+        path {
+            stroke: #57a1c9;
+        }
+    }
+
+}
