@@ -20,6 +20,7 @@ export const Button = ({
         { [`btn--${variant}--${color}`]: containedOrOutlined },
         { [`btn--${variant}`]: !containedOrOutlined },
         `btn--${size}`,
+        { [`btn--${size}__icon__${iconPosition}`]: icon },
     )
 
     return (
@@ -28,8 +29,11 @@ export const Button = ({
             disabled={disabled}
             aria-disabled={disabled}
         >
-            {children}
-            {iconPosition === 'right' && <span>{icon}</span>}
+            <div className="btn__content">
+                {iconPosition === 'left' && <span>{icon}</span>}
+                {children}
+                {iconPosition === 'right' && <span>{icon}</span>}
+            </div>
         </button>
     );
 }

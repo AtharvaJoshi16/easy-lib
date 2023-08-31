@@ -1,13 +1,26 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { Button } from './Button';
 import { ChevronRight } from '../globals/icons';
+import { Icon } from '../Icon';
 const meta: Meta<typeof Button> = {
     component: Button,
     title: 'Button',
+    argTypes: {
+        iconPosition: {
+            options: ['left', 'right', 'none'],
+            control: { type: 'radio' }
+        }
+    }
 };
 
 export default meta;
 type Story = StoryObj<typeof Button>;
+
+const icon = <Icon
+    color='red' title='Right'>
+    <ChevronRight />
+</Icon>
+
 
 export const ButtonVariants: Story = {
     render: ({ ...args }) => (
@@ -24,7 +37,7 @@ export const ButtonVariants: Story = {
         variant: 'contained',
         size: 'medium',
         color: 'primary',
-        icon: <ChevronRight />,
+        icon: icon,
     }
 }
 
@@ -43,6 +56,8 @@ export const ButtonDisabled: Story = {
         variant: 'contained',
         size: 'medium',
         color: 'primary',
-        disabled: true
+        disabled: true,
+        icon: icon,
+        iconPosition: 'right'
     }
 }
