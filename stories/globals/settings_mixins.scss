@@ -1,0 +1,16 @@
+@mixin contained-variant($background, $hover-bg, $pressed-bg) {
+    background: $background;
+
+    &:hover {
+        background: $hover-bg;
+    }
+
+    &:active {
+        background: $pressed-bg;
+    }
+}
+
+@mixin outlined-variant($border-size, $border-font-icon-color) {
+    border: $border-size solid $border-font-icon-color;
+    color: $border-font-icon-color;
+}

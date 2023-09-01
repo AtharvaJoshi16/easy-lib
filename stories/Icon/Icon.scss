@@ -1,32 +1,41 @@
 .icon {
-    &--white {
+    path {
+        stroke: none;
+    }
+
+    &--light {
         path {
             stroke: #fff;
         }
     }
 
-    &--black {
+    &--dark {
         path {
             stroke: #000;
         }
     }
 
-    &--red {
+    &--primary {
         path {
-            stroke: #961911;
+            stroke: #6600FF;
         }
     }
 
-    &--green {
+    &--secondary {
         path {
-            stroke: #3e9658;
+            stroke: #2385a6;
         }
     }
 
-    &--blue {
+    &--success {
         path {
-            stroke: #57a1c9;
+            stroke: #3c8f40;
         }
     }
 
+    &--error {
+        path {
+            stroke: #9b2729;
+        }
+    }
 }

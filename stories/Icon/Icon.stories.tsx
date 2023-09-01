@@ -19,7 +19,7 @@ export const IconDefault: Story = {
         </div>
     ),
     args: {
-        color: 'white',
+        color: 'light',
         children: <ChevronRight />,
         title: "Right",
         width: '48px',

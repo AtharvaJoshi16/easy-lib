@@ -1,5 +1,5 @@
 export interface IconProps {
-    color: "black" | "white" | "red" | "green" | "blue",
+    color: "dark" | "light" | "primary" | "secondary" | "success" | "error",
     children: React.ReactElement,
     width?: string,
     height?: string,

@@ -1,0 +1,125 @@
+@import '../globals/index.scss';
+
+.iconbutton {
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    &--contained {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+        path {
+            stroke: #FFFFFF;
+            fill: #FFFFFF;
+        }
+
+        &--primary {
+            @include contained-variant(#6600FF, #4500AD, #3D0099);
+        }
+
+        &--secondary {
+            @include contained-variant(#2385a6, #1E728E, #195F76);
+        }
+
+        &--success {
+            @include contained-variant(#3c8f40, #337A36, #2B682E);
+        }
+
+        &--error {
+            @include contained-variant(#9b2729, #842123, #711C1E);
+        }
+
+        &--dark {
+            @include contained-variant(#374242, #535D5D, #474F4F);
+        }
+    }
+
+    &--outlined {
+        background-color: transparent;
+
+        &--primary {
+            @include outlined-variant(2px, #6600FF);
+
+            path {
+                fill: #6600FF;
+                stroke: #6600FF;
+            }
+        }
+
+        &--secondary {
+            @include outlined-variant(2px, #2385a6);
+
+            path {
+                fill: #2385a6;
+                stroke: #2385a6;
+            }
+        }
+
+        &--success {
+            @include outlined-variant(2px, #3c8f40);
+
+            path {
+                fill: #3c8f40;
+                stroke: #3c8f40;
+            }
+        }
+
+        &--error {
+            @include outlined-variant(2px, #9b2729);
+
+            path {
+                fill: #9b2729;
+                stroke: #9b2729;
+            }
+        }
+
+        &--dark {
+            @include outlined-variant(2px, #374242);
+
+            path {
+                fill: #374242;
+                stroke: #374242;
+            }
+        }
+
+        &:hover {
+            background: #E8EAEB;
+        }
+
+        &:active {
+            background: #e1e1e1;
+        }
+    }
+
+    &--text {
+        background-color: transparent;
+
+        &:hover {
+            background: #E8EAEB;
+        }
+
+        &:active {
+            background: #e1e1e1;
+        }
+    }
+
+    &--floating {
+        z-index: 1;
+        border-radius: 30px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+        &:hover {
+            background: #E8EAEB;
+        }
+
+        &:active {
+            background: #e1e1e1;
+        }
+    }
+}

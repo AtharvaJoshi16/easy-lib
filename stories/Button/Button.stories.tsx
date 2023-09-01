@@ -21,7 +21,7 @@ const handleClick = () => {
 }
 
 const icon = <Icon
-    color='white' title='Right'>
+    color='light' title='Right'>
     <ChevronRight />
 </Icon>
 

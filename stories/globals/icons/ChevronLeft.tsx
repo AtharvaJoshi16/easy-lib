@@ -1,11 +1,13 @@
 const SvgChevronLeft = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" {...props}>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+    className="chevron-left_svg__bi chevron-left_svg__bi-chevron-left"
+    viewBox="0 0 16 16"
+    {...props}>
     <path
-      stroke="#000"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="m15 6-6 6 6 6"
+      fillRule="evenodd"
+      d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
     />
   </svg>
 );

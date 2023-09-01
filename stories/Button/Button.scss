@@ -1,22 +1,5 @@
 @import '../globals/index.scss';
 
-@mixin contained-variant($background, $hover-bg, $pressed-bg) {
-    background: $background;
-
-    &:hover {
-        background: $hover-bg;
-    }
-
-    &:active {
-        background: $pressed-bg;
-    }
-}
-
-@mixin outlined-variant($border-size, $border-font-color) {
-    border: $border-size solid $border-font-color;
-    color: $border-font-color;
-}
-
 .btn {
     border: 1px solid transparent;
     font-family: var(--rubik-medium);
