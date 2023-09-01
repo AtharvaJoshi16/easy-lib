@@ -13,9 +13,9 @@ const handleClick = () => {
 }
 export const IconButtonVariants: Story = {
     render: ({ ...args }) => (
-        <div style={{ margin: '40px' }}>
+        <div style={{ margin: '40px', width: '80px', height: '80px', padding: '40px', background: '#a8a8a8' }}>
             <IconButton {...args}>
-                <ChevronRight />
+                <Trashbin />
             </IconButton>
         </div>
     ),

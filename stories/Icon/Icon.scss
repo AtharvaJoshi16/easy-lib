@@ -5,36 +5,42 @@
 
     &--light {
         path {
+            fill: #fff;
             stroke: #fff;
         }
     }
 
     &--dark {
         path {
+            fill: #000;
             stroke: #000;
         }
     }
 
     &--primary {
         path {
+            fill: #6600FF;
             stroke: #6600FF;
         }
     }
 
     &--secondary {
         path {
+            fill: #2385a6;
             stroke: #2385a6;
         }
     }
 
     &--success {
         path {
+            fill: #3c8f40;
             stroke: #3c8f40;
         }
     }
 
     &--error {
         path {
+            fill: #9b2729;
             stroke: #9b2729;
         }
     }
