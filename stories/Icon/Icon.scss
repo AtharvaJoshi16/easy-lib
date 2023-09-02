@@ -1,3 +1,5 @@
+@import '../globals/settings_colors.scss';
+
 .icon {
     path {
         stroke: none;
@@ -5,43 +7,43 @@
 
     &--light {
         path {
-            fill: #fff;
-            stroke: #fff;
+            fill: $light;
+            stroke: $light;
         }
     }
 
     &--dark {
         path {
-            fill: #000;
-            stroke: #000;
+            fill: $black-100;
+            stroke: $black-100;
         }
     }
 
     &--primary {
         path {
-            fill: #6600FF;
-            stroke: #6600FF;
+            fill: $primary;
+            stroke: $primary;
         }
     }
 
     &--secondary {
         path {
-            fill: #2385a6;
-            stroke: #2385a6;
+            fill: $secondary;
+            stroke: $secondary;
         }
     }
 
     &--success {
         path {
-            fill: #3c8f40;
-            stroke: #3c8f40;
+            fill: $success;
+            stroke: $success;
         }
     }
 
     &--error {
         path {
-            fill: #9b2729;
-            stroke: #9b2729;
+            fill: $error;
+            stroke: $error;
         }
     }
 }

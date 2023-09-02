@@ -6,6 +6,7 @@
     font-size: 16px;
     letter-spacing: 0.1px;
     border-radius: 6px;
+    color: $font-default;
 
     &__content {
         display: flex;
@@ -15,8 +16,8 @@
     }
 
     &:disabled {
-        background: #000000;
-        color: #848484;
+        background: $black-100;
+        color: $font-disabled;
         opacity: 0.3;
     }
 
@@ -85,27 +86,32 @@
     }
 
     &--contained {
-        color: #FFFFFF;
+        color: $light;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
         &--primary {
-            @include contained-variant(#6600FF, #4500AD, #3D0099);
+            @include contained-variant($primary, $contained-primary-hover, $contained-primary-active);
         }
 
         &--secondary {
-            @include contained-variant(#2385a6, #1E728E, #195F76);
+            @include contained-variant($secondary, $contained-secondary-hover, $contained-secondary-active);
         }
 
         &--success {
-            @include contained-variant(#3c8f40, #337A36, #2B682E);
+            @include contained-variant($success, $contained-success-hover, $contained-success-active);
         }
 
         &--error {
-            @include contained-variant(#9b2729, #842123, #711C1E);
+            @include contained-variant($error, $contained-error-hover, $contained-error-active);
         }
 
         &--dark {
-            @include contained-variant(#374242, #535D5D, #474F4F);
+            @include contained-variant($dark, $contained-dark-hover, $contained-dark-active);
+        }
+
+        &--light {
+            color: $font-default;
+            @include contained-variant($light, $contained-light-hover, $contained-light-active);
         }
     }
 
@@ -113,31 +119,41 @@
         background-color: transparent;
 
         &--primary {
-            @include outlined-variant(1.5px, #6600FF);
+            @include outlined-variant(1.5px, $primary);
         }
 
         &--secondary {
-            @include outlined-variant(1.5px, #2385a6);
+            @include outlined-variant(1.5px, $secondary);
         }
 
         &--success {
-            @include outlined-variant(1.5px, #3c8f40);
+            @include outlined-variant(1.5px, $success);
         }
 
         &--error {
-            @include outlined-variant(1.5px, #9b2729);
+            @include outlined-variant(1.5px, $error);
         }
 
         &--dark {
-            @include outlined-variant(1.5px, #374242);
+            @include outlined-variant(1.5px, $dark);
+        }
+
+        &--light {
+            @include outlined-variant(1.5px, $light);
+
+            &:hover {
+                color: $font-default;
+                transition: background-color 0.3s;
+            }
         }
 
         &:hover {
-            background: #E8EAEB;
+            background: $otf-hover;
+            transition: background-color 0.3s;
         }
 
         &:active {
-            background: #e1e1e1;
+            background: $otf-active;
         }
     }
 
@@ -145,11 +161,12 @@
         background-color: transparent;
 
         &:hover {
-            background: #cbcbcb;
+            background: $otf-hover;
+            transition: background-color 0.3s;
         }
 
         &:active {
-            background: #e1e1e1;
+            background: $otf-active;
         }
     }
 
@@ -159,11 +176,12 @@
         box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
         &:hover {
-            background: #cbcbcb;
+            background: $otf-hover;
+            transition: background-color 0.3s;
         }
 
         &:active {
-            background: #e1e1e1;
+            background: $otf-active;
         }
     }
 }

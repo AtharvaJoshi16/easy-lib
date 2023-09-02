@@ -9,6 +9,10 @@ const meta: Meta<typeof Button> = {
         iconPosition: {
             options: ['left', 'right', 'none'],
             control: { type: 'radio' }
+        },
+        color: {
+            options: ['primary', 'secondary', 'success', 'error', 'dark', 'light'],
+            control: { type: 'radio' }
         }
     }
 };
@@ -28,7 +32,7 @@ const icon = <Icon
 
 export const ButtonVariants: Story = {
     render: ({ ...args }) => (
-        <div style={{ margin: '30px', display: 'flex', gap: '20px' }}>
+        <div style={{ margin: '30px', background: '#9a9a9a', padding: '40px', justifyContent: 'center', alignItems: 'center', display: 'flex', gap: '20px' }}>
             <Button {...args}>
                 PRIMARY
             </Button>

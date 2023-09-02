@@ -1,9 +1,9 @@
 export interface ButtonProps {
     children: string;
     variant: 'contained' | 'outlined' | 'text' | 'floating';
-    color: 'primary' | 'secondary' | 'success' | 'error' | 'dark';
+    color: 'primary' | 'secondary' | 'success' | 'error' | 'dark' | 'light';
     disabled: boolean;
-    icon: JSX.Element;
+    icon: React.ReactElement;
     iconPosition: "left" | "right";
     href: string;
     size: 'small' | 'medium' | 'large';
