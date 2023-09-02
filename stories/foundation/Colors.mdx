@@ -4,27 +4,102 @@ import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
 
 <ColorPalette>
   <ColorItem
+    title="Font Default"
+    colors={{"$font-default": '#32366B'}}
+  />
+  <ColorItem
+    title="Font Disabled"
+    colors={{"$font-default": '#848484'}}
+  />
+  <ColorItem
+    title="Black"
+    colors={{"$black-100": '#000000'}}
+  />
+  <ColorItem
     title="Primary"
-    colors={{ $primary: '#6600FF'}}
+    colors={{ "$primary": '#6600FF'}}
+  />
+  <ColorItem
+    title="Primary Hover"
+    colors={{ "$contained-primary-hover": '#4500AD'}}
+  />
+  <ColorItem
+    title="Primary Active"
+    colors={{ "$contained-primary-active": '#3D0099'}}
   />
   <ColorItem 
     title="Secondary" 
-    colors={{ $secondary: '#2385a6' }} 
+    colors={{ "$secondary": '#2385a6' }} 
+  />
+    <ColorItem 
+    title="Secondary Hover" 
+    colors={{"$contained-secondary-hover": '#1E728E'
+}} 
+  />
+    <ColorItem 
+    title="Secondary Active" 
+    colors={{"$contained-secondary-active": '#195F76'}} 
   />
   <ColorItem 
     title="Success" 
-    colors={{ $success: '#3c8f40' }} 
+    colors={{ "$success": '#3c8f40' }} 
+  />
+    <ColorItem 
+    title="Success Hover" 
+    colors={{"$contained-success-hover": '#337A36'}} 
+  />
+    <ColorItem 
+    title="Success Active" 
+    colors={{"$contained-success-active": '#2B682E'}} 
   />
   <ColorItem
     title="Error"
-    colors={{ $error: '#9b2729'}}
+    colors={{ "$error": '#9b2729'}}
+  />
+    <ColorItem
+    title="Error Hover"
+    colors={{"$contained-error-hover": '#842123'}}
+  />
+    <ColorItem
+    title="Error Active"
+    colors={{"$contained-error-active": '#711C1E'}}
   />
   <ColorItem
     title="Dark"
-    colors={{ $dark: '#374242'}}
+    colors={{ "$dark": '#374242'}}
+  />
+    <ColorItem
+    title="Dark Hover"
+    colors={{"$contained-dark-hover": '#535D5D'}}
+  />
+    <ColorItem
+    title="Dark Active"
+    colors={{"$contained-dark-active": '#474F4F'}}
+  />
+    <ColorItem
+    title="Light"
+    colors={{ "$light": '#FFFFFF'}}
+  />
+    <ColorItem
+    title="Light Hover"
+    colors={{"$contained-light-hover": '#d9d9d9'}}
+  />
+    <ColorItem
+    title="Light Active"
+    colors={{"$contained-light-active": '#c9c9c9'}}
+  />
+  
+  <ColorItem
+    title="Outlined Text Floating Hover"
+    colors={{"$otf-hover": '#d9d9d9'}}
+  />
+
+  <ColorItem
+    title="Outlined Text Floating Active"
+    colors={{"$otf-active": '#c9c9c9'}}
   />
   <ColorItem
     title="Disabled"
-    colors={{ $disabled: '#848484'}}
+    colors={{ "$disabled": '#848484'}}
   />
 </ColorPalette>
