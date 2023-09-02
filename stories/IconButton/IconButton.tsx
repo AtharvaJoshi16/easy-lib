@@ -8,6 +8,7 @@ export const IconButton = ({
     children,
     color = "primary",
     onClick,
+    size = 'medium',
 }: IconButtonProps) => {
     const containedOrOutlined = (variant === 'contained' || variant === 'outlined');
     const classes = classNames(
@@ -15,6 +16,7 @@ export const IconButton = ({
         `iconbutton--${variant}`,
         { [`iconbutton--${variant}--${color}`]: containedOrOutlined },
         { [`iconbutton--${variant}`]: !containedOrOutlined },
+        `iconbutton--${size}`,
     )
     return (
         <button

@@ -23,5 +23,6 @@ export const IconButtonVariants: Story = {
         color: "primary",
         variant: "contained",
         onClick: handleClick,
+        size: 'medium',
     }
 }
