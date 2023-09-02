@@ -40,7 +40,11 @@
         }
 
         &--light {
-            color: $font-default;
+            path {
+                stroke: $black-100;
+                fill: $black-100;
+            }
+
             @include contained-variant($light, $contained-light-hover, $contained-light-active);
         }
     }
@@ -91,6 +95,26 @@
                 fill: $dark;
                 stroke: $dark;
             }
+        }
+
+        &--light {
+            @include outlined-variant(2px, $light);
+
+            path {
+                fill: $light;
+                stroke: $light;
+            }
+
+            &:hover {
+                path {
+                    fill: $black-100;
+                    stroke: $black-100;
+                }
+
+                background: $otf-hover;
+                transition: background-color 0.3s;
+            }
+
         }
 
         &:hover {
