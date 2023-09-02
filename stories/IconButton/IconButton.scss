@@ -1,14 +1,40 @@
 @import '../globals/index.scss';
 
 .iconbutton {
-    width: 48px;
-    height: 48px;
     border-radius: 6px;
     border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    svg {
-        width: 24px;
-        height: 24px;
+    &--small {
+        width: 30px;
+        height: 30px;
+
+        svg {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    &--medium {
+        width: 36px;
+        height: 36px;
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &--large {
+        width: 42px;
+        height: 42px;
+
+        svg {
+            width: 22px;
+            height: 22px;
+        }
     }
 
     &--contained {
@@ -53,7 +79,7 @@
         background-color: transparent;
 
         &--primary {
-            @include outlined-variant(2px, $primary);
+            @include outlined-variant(1.7px, $primary);
 
             path {
                 fill: $primary;
@@ -62,7 +88,7 @@
         }
 
         &--secondary {
-            @include outlined-variant(2px, $secondary);
+            @include outlined-variant(1.7px, $secondary);
 
             path {
                 fill: $secondary;
@@ -71,7 +97,7 @@
         }
 
         &--success {
-            @include outlined-variant(2px, $success);
+            @include outlined-variant(1.7px, $success);
 
             path {
                 fill: $success;
@@ -80,7 +106,7 @@
         }
 
         &--error {
-            @include outlined-variant(2px, $error);
+            @include outlined-variant(1.7px, $error);
 
             path {
                 fill: $error;
@@ -89,7 +115,7 @@
         }
 
         &--dark {
-            @include outlined-variant(2px, $dark);
+            @include outlined-variant(1.7px, $dark);
 
             path {
                 fill: $dark;
@@ -98,7 +124,7 @@
         }
 
         &--light {
-            @include outlined-variant(2px, $light);
+            @include outlined-variant(1.7px, $light);
 
             path {
                 fill: $light;

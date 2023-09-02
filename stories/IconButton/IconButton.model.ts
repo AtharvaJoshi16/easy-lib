@@ -5,4 +5,5 @@ export interface IconButtonProps {
     color?: "primary" | "secondary" | "success" | "error" | "dark" | "light",
     onClick: (event: React.MouseEvent<HTMLElement>) => void;
     children: React.ReactElement;
+    size?: 'small' | 'medium' | 'large';
 }
