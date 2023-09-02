@@ -1,0 +1,68 @@
+@import '../globals/index.scss';
+
+.typography {
+    color: $font-default;
+    @include fontFamily('regular');
+
+    &--nowrap {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &--underline {
+        text-decoration: underline;
+    }
+
+    &--strike {
+        text-decoration: line-through;
+    }
+
+    &--light {
+        @include fontFamily('light');
+    }
+
+    &--regular {
+        @include fontFamily('regular');
+    }
+
+    &--medium {
+        @include fontFamily('medium');
+    }
+
+    &--italic {
+        @include fontFamily('italic');
+    }
+
+    &--bold {
+        @include fontFamily('bold');
+    }
+
+    &--semibold {
+        @include fontFamily('semibold');
+    }
+
+    &--extrabold {
+        @include fontFamily('extrabold');
+    }
+
+    &--lightitalic {
+        @include fontFamily('lightitalic');
+    }
+
+    &--mediumitalic {
+        @include fontFamily('mediumitalic');
+    }
+
+    &--bolditalic {
+        @include fontFamily('bolditalic');
+    }
+
+    &--semibolditalic {
+        @include fontFamily('semibolditalic');
+    }
+
+    &--extrabolditalic {
+        @include fontFamily('extrabolditalic');
+    }
+}

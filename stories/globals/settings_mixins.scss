@@ -1,3 +1,5 @@
+@import './settings_global_variables.scss';
+
 @mixin contained-variant($background, $hover-bg, $pressed-bg) {
     background: $background;
 
@@ -13,4 +15,14 @@
 @mixin outlined-variant($border-size, $border-font-icon-color) {
     border: $border-size solid $border-font-icon-color;
     color: $border-font-icon-color;
+}
+
+@mixin fontFamily($name) {
+    font-family: var(map-get($fonts, $name));
+}
+
+@mixin breakpoint($name) {
+    @media screen and (min-width: map-get($breakpoints, $name)) {
+        @content
+    }
 }

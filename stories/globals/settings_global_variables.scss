@@ -1,0 +1,19 @@
+$breakpoints : ('xs': 360px,
+    'md': 768px,
+    'lg': 1024px,
+    'xl': 1440px,
+);
+
+$fonts : ('light': --rubik-light,
+    'regular': --rubik-regular,
+    'medium': --rubik-medium,
+    'italic': --rubik-italic,
+    'bold': --rubik-bold,
+    'semibold': --rubik-semibold,
+    'extrabold': --rubik-extrabold,
+    'lightitalic': --rubik-light-italic,
+    'mediumitalic': --rubik-medium-italic,
+    'bolditalic': --rubik-bold-italic,
+    'semibolditalic': --rubik-semibold-italic,
+    'extrabolditalic': --rubik-extrabold-italic,
+);
