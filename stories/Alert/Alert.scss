@@ -1,0 +1,31 @@
+@import '../globals/index.scss';
+
+.alert {
+    position: absolute;
+    top: 1%;
+    left: 0;
+    right: 0;
+    margin: 0 20px;
+    border-radius: 6px;
+    height: 50px;
+    color: $font-default;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoint("md") {
+        margin: 0 auto;
+        width: 30%;
+    }
+
+    &__icon-with-text {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    &--info {
+        background: #add9e8;
+    }
+}
