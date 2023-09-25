@@ -1,5 +1,9 @@
 export interface AlertProps {
     variant: 'success' | 'error' | 'info' | 'warning',
-    children: string;
+    children: React.ReactElement<AlertDataProps>[];
     timeout: number;
+}
+
+export interface AlertDataProps {
+    children: string;
 }

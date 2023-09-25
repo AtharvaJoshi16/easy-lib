@@ -13,9 +13,12 @@ type Story = StoryObj<typeof Alert>;
 export const AlertDefault: Story = {
     render: ({ ...args }) => (
         <Alert {...args}>
-            <Typography variant='p' style='regular'>
-                This is a sample alert text.
-            </Typography>
+            <Alert.Heading>
+                This is a sample alert heading.
+            </Alert.Heading>
+            <Alert.Text>
+                This is sample alert text.
+            </Alert.Text>
         </Alert>
     ),
     args: {

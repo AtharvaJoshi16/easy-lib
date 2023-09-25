@@ -5,12 +5,15 @@ import classNames from "classnames";
 import { Icon } from '../Icon';
 import { Info, Close } from '../globals/icons';
 import { IconButton } from '../IconButton';
+import { AlertHeading } from "./AlertHeading";
+import { AlertText } from "./AlertText";
 
 export const Alert = ({
     variant = 'info',
     timeout = 1000,
     children,
 }: AlertProps) => {
+    console.log(children);
     const classes = classNames(
         'alert',
         `alert--${variant}`
@@ -21,7 +24,9 @@ export const Alert = ({
                 <Icon width="16px" height="16px" title="info">
                     <Info />
                 </Icon>
-                {children}
+                <div className="alert__icon-with-text__content">
+                    {children}
+                </div>
             </div>
             <IconButton variant="text" color="dark" size="small" onClick={() => { }}>
                 <Close />
@@ -29,3 +34,6 @@ export const Alert = ({
         </div>
     )
 };
+
+Alert.Heading = AlertHeading;
+Alert.Text = AlertText;
